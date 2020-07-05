@@ -1,0 +1,52 @@
+<view class="cartContainer">
+
+	<view class="cartBody">
+  <!--有购物车-->
+		<block wx:if="{{hasCart}}">
+
+			<view class="cart-Item flex hcenter" wx:for="{{cartData}}" wx:key="index">
+				<view class="cart-item-thumb">
+					<image src="{{item.poster}}" mode="aspectFill"></image>
+				</view>
+
+				<view class="cart-item-info">
+					<view class="item-title">{{item.title}}</view>
+					<view class="item-price">￥{{item.price}}</view>
+					<view class="item-option flex hcenter">
+						<view class="item-value flex">
+
+							<view class="opton-sub" id="{{index}}" bindtap="minus">-</view>
+
+							<view class="option-value ">
+								<input value="{{item.count}} "></input>
+							</view>
+
+							<view class="option-add " id="{{index}}" bindtap="add">+</view>
+						</view>
+
+						<view class="item-rabish ">
+							<image src="{{source}}ico/rubish.png" id="{{index}}" bindtap="del"></image>
+						</view>
+					</view>
+				</view>
+			</view>
+
+			<view class="cart-general flex " wx:if="{{totalPrice}}">
+				<view class="price-total ">
+					<text>店铺合计：</text>
+					<text>￥{{totalPrice}}</text>
+				</view>
+				<view class="goToPay" bindtap="createOrder">去结算</view>
+			</view>
+		</block>
+
+  <!--没有购物车-->
+		<block wx:else>
+			<view>
+				还没有购买任何宝宝，去买吧~~
+			</view>
+		</block>
+
+	</view>
+
+</view>

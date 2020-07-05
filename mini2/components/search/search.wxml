@@ -1,0 +1,6 @@
+  <view class="search flex vcenter" style="background-color: {{bgcolor}};">
+    <view>
+      <image class="image" src="{{source}}ico/search.png" />
+    </view>
+    <view class="search-title">{{title}}</view>
+  </view>

@@ -1,0 +1,84 @@
+<!--pages/my/my.wxml-->
+<view class="myContainer">
+
+  <view class="myTop">
+    <view class="myheaderIco"><image src="{{avatorUrl}}" mode="aspectFill" /></view>
+    <view class="myhello">你好，{{nickName}}！</view>
+    <view class="myopts flexrow">
+
+      <view class="myoptsItem" bindtap="myinfo">
+        <view class="myoptsItemIco"><image src="{{source}}ico/my_ico_member.png"></image></view>
+        <view class="myoptsItemName">完善资料</view>
+      </view>
+
+      <view class="myoptsItem" bindtap="goToMyOrder">
+        <view class="myoptsItemIco"><image src="{{source}}ico/my_ico_order.png"></image></view>
+        <view class="myoptsItemName">我的订单</view>
+      </view>
+
+      <view class="myoptsItem" bindtap="mycomment">
+        <view class="myoptsItemIco"><image src="{{source}}ico/my_ico_common.png"></image></view>
+        <view class="myoptsItemName">我的评论</view>
+      </view>
+
+      <view class="myoptsItem">
+        <view class="myoptsItemIco"><image src="{{source}}ico/my_ico_history.png"></image></view>
+        <view class="myoptsItemName">浏览历史</view>
+      </view>
+
+      <view class="myoptsItem">
+        <view class="myoptsItemIco"><image src="{{source}}ico/my_ico_collect.png"></image></view>
+        <view class="myoptsItemName">我的收藏</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="opts">
+    <view class="optsBox flexrow">
+
+      <view class="optsItem">
+        <view class="optsItemIco"><image src="{{source}}ico/my_ico_contact.png"></image></view>
+        <view class="optsItemName">客服服务</view>
+      </view>
+
+      <view class="optsItem">
+        <view class="optsItemIco"><image src="{{source}}ico/my_ico_tool.png"></image></view>
+        <view class="optsItemName">实用小工具</view>
+      </view>
+
+      <view class="optsItem">
+        <view class="optsItemIco"><image src="{{source}}ico/my_ico_tel.png"></image></view>
+        <view class="optsItemName">电话咨询</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="recommend">
+
+    <view class="recommendTitleBox flex">
+      <view class="recommendTitle">
+        <image src="{{source}}ico/crown.png"></image>
+        <text>精品推荐</text>
+      </view>
+    </view>
+    
+
+
+    <view class="box">
+
+      <view class="top3Content">
+
+        <view class="top3Item" wx:for="{{bookData}}" wx:key="{{index}}">
+          <view class="top3ItemImg"><image src="{{item.photo}}"></image></view>
+          <view class="top3ItemTitle">{{item.bookname}}</view>
+          <view class="top3ItemPrice">￥<text>{{item.price}}</text>.{{item.price_dec}}</view>
+        </view>
+
+      </view>
+  </view>
+
+  </view>
+
+</view>

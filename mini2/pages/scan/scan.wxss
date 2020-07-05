@@ -1,0 +1,40 @@
+/* pages/scan/scan.wxss */
+
+page {
+  background:#F1F1F1 url('http://www.fuhushi.com/source/static/images/scan_bgimg.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.box {
+   display: flex;
+  justify-content: center;
+}
+
+.myheader {
+  width: 116rpx;
+  height: 116rpx;
+  border: #FFF 5rpx solid;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hello, .tip {
+  text-align: center;
+  font-size: 24rpx;
+  color: #FFF;
+}
+
+.tip {
+  margin-top: 20rpx;
+}
+
+.scan {
+  display: flex;
+  justify-content: center;
+  padding-top: 200rpx;
+}
+
+.scan image {
+  width: 277rpx;
+  height: 277rpx;
+}

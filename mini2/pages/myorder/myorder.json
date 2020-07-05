@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "star": "../../components/star/star"
+  },
+  "navigationBarTitleText": "订单信息",
+  "navigationBarBackgroundColor": "#F53F4A",
+  "navigationBarTextStyle": "white",
+  "backgroundColorTop": "##F53F4A",
+  "backgroundColorBottom": "#f1f1f1"
+}

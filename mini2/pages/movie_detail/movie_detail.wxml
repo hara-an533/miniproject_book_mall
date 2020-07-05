@@ -1,0 +1,123 @@
+<!--pages/movie_detail/movie_detail.wxml-->
+<view class="CONTAINER">
+  <view class="header">
+  <view class="firstContainer">
+    <!-- 标题 -->
+    <view class="flex sb titlee vcenter">
+      <view class="title-t flex vcenter">
+        <view class="before"></view>
+        <view>泰坦尼克号 Titanic (1997)</view>
+      </view>
+      <view class="shoucang flex vcenter">
+        <view>
+          <image mode="aspectFill" class="imgs" src="{{source}}ico/star_outline.png" />
+        </view>
+        <view class="text-one">加入收藏</view>
+      </view>
+    </view>
+    <!-- 描述 -->
+    <view class="descript">
+      1912年4月10日，号称 “世界工业史上的奇迹”的豪华客轮泰坦尼克号开始了自己的处女航，从英国的南安普顿出发驶往美国纽约。富家少女罗丝（凯特•温丝莱特）与母亲及未婚夫卡尔坐上了头等舱；另一边，放荡不羁的少年画家杰克（莱昂纳多·迪卡普里奥）也在码头的一场赌博中赢得了下等舱的船票。 ...
+    </view>
+    <!-- 花絮欣赏 -->
+    <view class="huaxuxinshang flex vcenter">
+      <view class="flex vcenter">
+        <view class="before becolor"></view>
+        <view class="huaw">花絮欣赏</view>
+      </view>
+    </view>
+    <view class="huaxuvideo flex vcenter">
+      <image mode="aspectFill" src="{{source}}ico/button_play.png" />
+    </view>
+    <!-- 单价会员片 -->
+    <view class="danjiahuiyuan flex vcenter">
+      <view class="before becolor"></view>
+      <view class="wang">单价会员价</view>
+      <view class="price_one">
+        <text class="price-on">￥</text>
+        <text class="price-on1">38.</text>
+        <text class="price-on2">09</text>
+      </view>
+      <view class="zhushi">（注：版权所有腾讯公司，未经许可，不得转载）</view>
+    </view>
+    <!-- 观赏正片 -->
+    <view class="guangshan flex vcenter">
+      <view class="box flex vcenter boxc1">播放</view>
+      <view class="box flex vcenter boxc1">暂停</view>
+      <view class="box flex vcenter boxc1">停止</view>
+      <view class="box flex vcenter boxc2">下载</view>
+    </view>
+  </view>
+  <!-- 第二部分 -->
+  <view class="secondContainer">
+    <view class="flex vcenter seconeCon">
+      <view class="before bec-one"></view>
+      <view class="three-tet">相关信息</view>
+    </view>
+    <view class="author seconeCon border-line vcenter flex sb">
+      <view class="flex">
+        <view class="fir-mar">导演</view>
+        <view class="sec-m">詹姆斯·卡梅隆</view>
+      </view>
+      <view class="sec-ms">查看作品></view>
+    </view>
+    <view class="author seconeCon border-line vcenter flex sb">
+      <view class="flex">
+        <view class="fir-mar">主演</view>
+        <view class="sec-m sec-m-clor">
+          <text>莱昂纳多·迪卡普里奥</text> /
+          <text>凯特·温丝莱特</text> </view>
+      </view>
+    </view>
+    <view class="author seconeCon border-line vcenter flex sb">
+      <view class="flex">
+        <view class="fir-mar">类型</view>
+        <view class="sec-m text-clor">
+          <text>剧情</text>/
+          <text>爱情</text>/
+          <text>灾难</text>
+        </view>
+      </view>
+    </view>
+    <view class="author seconeCon border-line vcenter flex sb">
+      <view class="flex">
+        <view class="fir-mar">国家</view>
+        <view class="sec-m">美国</view>
+      </view>
+      <view class="sec-ms">查看作品></view>
+    </view>
+    <view class="author seconeCon vcenter flex sb">
+      <view class="flex">
+        <view class="fir-mar">片长</view>
+        <view class="sec-m">192分钟</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 第三部分 -->
+  <comment></comment>
+  
+  </view>
+<!-- 脚 -->
+  <view class="footer">
+    <view class="views">
+      <view class="cuole">
+        <view><image src="{{source}}ico/tabbar_home_gray.png" /></view>
+        <view class="picture">首页</view>
+      </view>
+      <view class="cuole">
+        <view><image src="{{source}}ico/share.png" /></view>
+        <view class="picture">分享</view>
+      </view>
+      <view class="cuole postionms">
+        <view><image src="{{source}}ico/tabbar_cart_gray.png" /></view>
+        <view class="picture">购物车</view>
+        <view class="postionms-1">1</view>
+      </view>
+    </view>
+    <view class="views-2 yellow">立即购买</view>
+    <view class="views-2 red">加入购物车</view>
+  </view>
+
+  
+</view>

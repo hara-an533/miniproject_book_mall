@@ -1,0 +1,34 @@
+<!--pages/my_info/my_info.wxml-->
+
+<form bindsubmit="onSubmit">
+<view class="myinfoContainer">
+  <view class="infoForm">
+    <view class="infoInput flex">您的名字：
+      <input name="username" value="{{userinfo.name}}" />
+    </view>
+    <view class="infoInput flex">手机号码：
+      <input name="tel" value="{{userinfo.tel}}" />
+    </view>
+    <view class="addressBox flex">
+      <view class="infoInput flex">收货地址：
+        <input name="address" value="{{address}}" />
+      </view>
+      <view class="map" bindtap="getLocation">地图定位</view>
+    </view>
+    <view class="infoInput flex">邮政编码：
+      <input placeholder="选填" class="inputPlaceholder" name="post" value="{{userinfo.post}}" />
+    </view>
+    <view class="infoInput flexrow bottom ">
+      <view style="width:200rpx; height:50px;">上传头像:</view>
+      <view class="chooseOrTake" bindtap="getPhoto">点击选择图片或拍照</view>
+    </view>
+  </view>
+
+  <view class="submitItem flex flexAlignItem">
+    <view style="margin: 0rpx auto;width:85%;">
+      <button class="submitBtn" size="mini" form-type="submit" >确定</button>
+      <button class="resetBtn" size="mini" form-type="reset" >重置</button>
+    </view>
+  </view>
+</view>
+</form>

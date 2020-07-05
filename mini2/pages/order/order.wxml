@@ -1,0 +1,57 @@
+<!--pages/order/order.wxml-->
+<view class="Container">
+<!-- 收货人 -->
+  <view>
+    <view class="first-box">
+      <image mode="aspectFill" src="{{source}}ico/colorline.gif" />
+    </view>
+    <view class="first-mian">
+      <view class="motify flex sb vcenter">
+        <view class="flex vcenter">
+          <view>
+            <image class="samll-address" src="{{source}}ico/address.png" />
+          </view>
+          <view class="margin-boxs">收货人：{{userInfo.name}}</view>
+        </view>
+        <view class="margin-boxs-s">{{userInfo.tel}}</view>
+      </view>
+      <view class="addressAB flex">{{userInfo.address}}</view>
+    </view>
+    <view class="first-box">
+      <image mode="aspectFill" src="{{source}}ico/colorline.gif" />
+    </view>
+  </view>
+  <!-- 购买内容 -->
+  <view class="second-box">
+    <view class="second-box-1 flex vcenter">
+      <view><image src="{{source}}ico/content.png"/></view>
+      <view class="goumaineirong">购买内容</view>
+    </view>
+  </view>
+  <!-- 内容图片部分 -->
+  <view>
+    <view class="flex vcenter picture">
+
+      <view class="picture-s" wx:for="{{productInfo}}" wx:key="index"><image src="{{item.poster}}"/></view>
+      
+    </view>
+  </view>
+
+  <!-- 商品总额 -->
+  <view class="xiaoji">
+    <view class="flex sb vcenter">
+      <view class="text-s">商品总金额</view>
+      <view class="text-s">￥{{totalPrice}}</view>
+    </view>
+  </view>
+  <!-- last -->
+
+  <view class="last flex vcenter ">
+    <view class="hou">总额（含运费）</view>
+    <view class="guang">￥{{totalPrice}}</view>
+    <view class="xin flex vcenter" bindtap="createOrder">提交订单</view>
+  
+  </view>
+
+
+</view>

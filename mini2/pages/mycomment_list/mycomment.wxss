@@ -1,0 +1,33 @@
+/* pages/mycomment/mycomment.wxss */
+
+.CONTAINER {
+  background-color: #f1f1f1;
+}
+
+.first-box {
+  padding: 0 30rpx;
+  background-color: #FFF;
+  padding-bottom: 20rpx;
+}
+
+.list-item {
+  font-size: 26rpx;
+  border-bottom: #CCC 1px solid;
+  padding-bottom: 30rpx;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.option {
+  text-align: right;
+}
+
+.option text {
+  font-size: 26rpx;
+  margin: 0 20rpx;
+  border: #CCC 1px solid;
+  padding: 2px 5px;
+  border-radius: 10rpx;
+}

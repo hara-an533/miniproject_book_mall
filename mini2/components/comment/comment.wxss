@@ -1,0 +1,80 @@
+/* components/comment/comment.wxss */
+
+.threeContainer {
+  width: 750rpx;
+  background-color: #fff;
+  margin-top: 30rpx;
+  padding-top: 20rpx;
+}
+
+.seconeCon {
+  padding: 0 30rpx 0 40rpx;
+}
+
+.before {
+  width: 5rpx;
+  height: 28rpx;
+  background-color: #f00;
+  margin-right: 10rpx;
+}
+
+.bscolor-s {
+  background-color: #fc0;
+}
+
+.huaw {
+  font-size: 26rpx;
+  color: #333;
+}
+
+
+.shangpinpinglun {
+  font-size: 24rpx;
+}
+
+.shangpinpinglun .text {
+  color: #d81e06;
+}
+
+.canyu-t {
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.main {
+  padding-bottom: 30rpx;
+}
+.shizhi {
+  border-bottom: 1px solid #ccc;
+}
+
+.pibnglunlist-1 {
+  margin-top: 20rpx;
+}
+
+.pibnglunlist-1 .iama {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.wangling {
+  margin-right: 20rpx;
+}
+
+.yangshi {
+  color: #333;
+  font-size: 20rpx;
+}
+
+.starFive {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.weitusi {
+  width: 666rpx;
+  height: 54rpx;
+  color: #939393;
+  font-size: 20rpx;
+}

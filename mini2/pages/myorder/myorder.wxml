@@ -1,0 +1,114 @@
+<view class="myOrderContainer">
+
+	<view class="myOrderBlockItem" wx:if="{{hasData}}">
+
+		<view class="myOrderItem" wx:for="{{orderData}}" wx:key="index">
+			<view class="myOrderItemImg">
+				<image src="{{item.productInfo.poster}}" mode="aspectFill" />
+			</view>
+			<view class="myOrderItemInfo">
+				<view class="myOrderItemInfoContent">
+					<view class="contentTitle">{{item.productInfo.title}}</view>
+					<view class="contentDatePrice flexrow">
+						<view>下单时间：{{item.dt}}</view>
+						<view>商品价格：￥{{item.productInfo.price}}</view>
+					</view>
+				</view>
+
+        <!--发表评论-->
+				<block wx:if="{{!item.comment}}">
+					<view class="commentStar flexrow">
+						<view class="commentOpen" data-sn="{{item.sn}}" data-c1id="{{item.c1id}}" data-c2id="{{item.c2id}}" data-pid="{{item.pid}}"  data-title="{{item.productInfo.title}}" bindtap="sendComment">发表评论</view>
+					</view>
+				</block>
+        
+        <!--编辑评论-->
+        <block wx:else>
+						<view class="commentStar flexrow">
+							<view class="stars flexrow">
+								<star nums="{{item.comment.stars}}" class="star"></star>
+								<text>{{item.comment.stars}}星评论</text>
+							</view>
+							<view class="commentEdit"  data-sn="{{item.sn}}" data-c1id="{{item.c1id}}" data-c2id="{{item.c2id}}" data-pid="{{item.pid}}"  data-title="{{item.productInfo.title}}" data-stars="{{item.comment.stars}}" data-notes="{{item.comment.notes}}"  data-cid="{{item.comment.id}}" bindtap="editComment">编辑评论</view>
+						</view>
+						<view class="commentContent">
+							<textarea>
+              {{item.comment.notes}}
+            </textarea>
+						</view>
+					</block>
+
+
+			</view>
+
+		</view>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+
+		<view class="myOrderItem">
+
+			<view class="myOrderItemImg">
+				<image src="{{source}}images/demo.gif" mode="aspectFill" />
+			</view>
+			<view class="myOrderItemInfo">
+				<view class="myOrderItemInfoContent">
+					<view class="contentTitle">健康日历健康日历健康日历日历健康日历日历健康日历日历健康日历日</view>
+					<view class="contentDatePrice flexrow">
+						<view>下单时间：2018-09-20</view>
+						<view>商品价格：￥26.34</view>
+					</view>
+				</view>
+
+				<view class="myOrderItemInfoComment">
+
+					<block>
+						<view class="commentStar flexrow">
+							<view class="stars flexrow">
+								<star> </star>
+								<text>4星评论</text>
+							</view>
+							<view class="commentEdit">编辑评论</view>
+						</view>
+						<view class="commentContent">
+							<textarea>
+              评论评论评论评论评评论评论 评论评论评论评论评评论评论 评论评论评论评论评评论评论 评论评论评论评论评评论评论
+            </textarea>
+						</view>
+					</block>
+
+				</view>
+			</view>
+		</view>
+
+		<view class="myOrderItem">
+			<view class="myOrderItemImg">
+				<image src="{{source}}images/demo.gif" mode="aspectFill" />
+			</view>
+			<view class="myOrderItemInfo">
+				<view class="myOrderItemInfoContent">
+					<view class="contentTitle">健康日历健康日历健康日历日历健康日历日历健康日历日历健康日历日</view>
+					<view class="contentDatePrice flexrow">
+						<view>下单时间：2018-09-20</view>
+						<view>商品价格：￥26.34</view>
+					</view>
+				</view>
+
+				<block>
+					<view class="commentStar flexrow">
+						<view class="commentOpen" bindtap="getChild">发表评论</view>
+					</view>
+				</block>
+
+			</view>
+
+		</view>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+
+	</view>
+
+	<view wx:else>
+		暂无订单！
+	</view>
+
+</view>

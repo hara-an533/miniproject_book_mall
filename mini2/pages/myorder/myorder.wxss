@@ -1,0 +1,88 @@
+page{
+  background-color: #f1f1f1
+}
+
+.myOrderItem{
+  background-color: #fff;
+  padding: 30rpx 44rpx;
+  margin-bottom: 36rpx;
+  display: flex;
+}
+.myOrderItemImg image{
+  width: 175rpx;
+  height: 225rpx;
+  margin-right: 40rpx
+}
+.contentTitle{
+  font-size: 26rpx;
+  padding:16rpx 0 ;
+  border-bottom: 1px dotted #999999;
+}
+.contentDatePrice{
+  width: 445rpx;
+  font-size: 21rpx;
+  color: #5d5d5d;
+  padding:16rpx 0 ;
+  border-bottom: 1px dotted #999999;
+}
+
+textarea{
+  width: 445rpx;
+  height: 92rpx;
+  overflow: auto;
+  font-size: 21rpx;
+  color: #5d5d5d
+}
+.stars text{
+   font-size: 21rpx;
+  color: #5d5d5d;
+  margin-left: 10rpx
+}
+.commentEdit{
+    font-size: 18rpx;
+  color: #fff;
+  background-color: #8067AB;
+  padding: 8rpx 18rpx;
+  border-radius: 20rpx
+}
+.commentStar{
+  margin: 20rpx 0
+}
+
+/*  */
+.commentOpen{
+  display: inline-block;
+  margin-top: 26rpx;
+     font-size: 18rpx;
+  color: #fff;
+  background-color: #FF0000;
+  padding: 8rpx 18rpx;
+  border-radius: 20rpx
+}
+input{
+    font-size: 21rpx;
+  color: #5d5d5d
+}
+.flexrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myOrderSn {
+  display: flex;
+  justify-content: space-between;
+
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.myOrderSn text:nth-child(2){
+  font-weight: normal;
+  font-size: 24rpx;
+  color: #666;
+  padding-right: 20rpx;
+}

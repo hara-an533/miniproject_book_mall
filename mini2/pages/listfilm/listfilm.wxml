@@ -1,0 +1,110 @@
+<view class="bigContainer">
+  <!-- 搜索 -->
+  <search title="搜索电影商品" bgcolor="#FFDFEC"></search>
+  
+<!-- 全部类型 -->
+  <view class="first_box flex vcenter">
+    <view class="before"></view>
+    <view class="aftertext">全部类型</view>
+  </view>
+
+  <view class="List">
+    <view wx:for="{{dataList}}" id="{{index}}" class="leixinglist {{select == index? 'red':''}}" bindtap="selected">{{item}}</view>
+  </view>
+
+  <!-- 全部地区 -->
+    <view class="first_box flex vcenter">
+    <view class="before greens"></view>
+    <view class="aftertext">全部地区</view>
+  </view>
+
+  <view class="List borderLine">
+    <view wx:for="{{assList}}" id="{{index}}" class="leixinglist {{selects == index? 'green':''}}" bindtap="selecteds">{{item}}</view>
+  </view>
+  <!-- 列表 -->
+  <view class="bottomlist flex">
+    <view>
+      <image src="{{source}}images/Titanic.png" />
+    </view>
+    <view class="right-text">
+      <view class="first-one">泰坦尼克号 Titanic</view>
+      <view class="first-other">导演: 詹姆斯·卡梅隆</view>
+      <view class="first-other">编剧: 詹姆斯·卡梅隆</view>
+      <view class="first-other">主演: 莱昂纳多·迪卡普里奥 / 凯特·温丝莱特...</view>
+      <view class="first-other">类型: 剧情 / 爱情 / 灾难</view>
+      <view class="first-other">制片国家/地区: 美国</view>
+      <view class="text-color">
+        <text class="text-size1">￥</text>
+        <text class="text-size">98</text>
+        <text class="text-size3">.00</text>
+      </view>
+      <view class="starFive flex vcenter">
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <text class="wang-size">1498条评论</text>
+      </view>
+    </view>
+  </view>
+
+
+    <view class="bottomlist flex">
+    <view>
+      <image src="{{source}}images/WALL-E.png" />
+    </view>
+    <view class="right-text">
+      <view class="first-one">泰坦尼克号 Titanic</view>
+      <view class="first-other">导演: 詹姆斯·卡梅隆</view>
+      <view class="first-other">编剧: 詹姆斯·卡梅隆</view>
+      <view class="first-other">主演: 莱昂纳多·迪卡普里奥 / 凯特·温丝莱特...</view>
+      <view class="first-other">类型: 剧情 / 爱情 / 灾难</view>
+      <view class="first-other">制片国家/地区: 美国</view>
+      <view class="text-color">
+        <text class="text-size1">￥</text>
+        <text class="text-size">98</text>
+        <text class="text-size3">.00</text>
+      </view>
+      <view class="starFive flex vcenter">
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <text class="wang-size">1498条评论</text>
+      </view>
+    </view>
+  </view>
+
+
+    <view class="bottomlist flex">
+    <view>
+      <image src="{{source}}images/order2.jpg" />
+    </view>
+    <view class="right-text">
+      <view class="first-one">泰坦尼克号 Titanic</view>
+      <view class="first-other">导演: 詹姆斯·卡梅隆</view>
+      <view class="first-other">编剧: 詹姆斯·卡梅隆</view>
+      <view class="first-other">主演: 莱昂纳多·迪卡普里奥 / 凯特·温丝莱特...</view>
+      <view class="first-other">类型: 剧情 / 爱情 / 灾难</view>
+      <view class="first-other">制片国家/地区: 美国</view>
+      <view class="text-color">
+        <text class="text-size1">￥</text>
+        <text class="text-size">98</text>
+        <text class="text-size3">.00</text>
+      </view>
+      <view class="starFive flex vcenter">
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <image src="{{source}}ico/star.png"/>
+        <text class="wang-size">1498条评论</text>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

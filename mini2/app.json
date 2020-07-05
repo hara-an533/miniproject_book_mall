@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    
+    "pages/scan/scan",
+    "pages/mycomment_send/mycomment",
+    "pages/mycomment_list/mycomment",
+    "pages/mycomment_edit/mycomment",
+    "pages/my_info/my_info",
+    "pages/myorder/myorder",
+    
+    "pages/my/my",
+    "pages/cart/cart",
+    "pages/order/order",
+   
+    "pages/bookdetails/bookdetails",
+    "pages/music_detail/music_detail",
+    "pages/movie_detail/movie_detail",
+    
+    "pages/listbook/listbook",
+    "pages/listmusic/listmusic",
+    "pages/listfilm/listfilm",
+    
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "BOOKSTORE",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color":"#666",
+    "selectedColor":"#FF4444",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"static/ico/tabbar_home_gray.png",
+        "selectedIconPath":"static/ico/tabbar_home.png"
+      },
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫码",
+        "iconPath": "static/ico/tabbar_scan_gray.png",
+        "selectedIconPath": "static/ico/tabbar_scan.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "static/ico/tabbar_cart_gray.png",
+        "selectedIconPath": "static/ico/tabbar_cart.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/ico/tabbar_my_gray.png",
+        "selectedIconPath": "static/ico/tabbar_my.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

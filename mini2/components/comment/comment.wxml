@@ -1,0 +1,33 @@
+<view class="threeContainer">
+
+    <!-- 商品评论 -->
+    <view class="flex vcenter sb seconeCon">
+      <view class="flex vcenter">
+        <view class="before bscolor-s"></view>
+        <view class="huaw">商品评论</view>
+      </view>
+      <view class="shangpinpinglun flex vcenter">
+        <view>综合评分：
+          <text class="text">9.2</text> 分</view>
+        <view class="canyu-t">120834人参与</view>
+      </view>
+    </view>
+    <!-- 商品评论列表 -->
+    
+    <view class="main shizhi">
+      <view class="pibnglunlist-1 seconeCon flex vcenter">
+        <view class="wangling">
+          <image class="iama" src="{{source}}images/temp3.jpg" />
+        </view>
+        <view>
+          <view class="yangshi">欢乐****（匿名）</view>
+          <star nums="3"></star>
+        </view>
+      </view>
+      <view class="seconeCon weitusi">译者把它翻译的很适合中国人阅读，所以读起来很舒服，这本书很适合职场人士的阅读，学习很多，是一本不可多得的好书。</view>
+    </view>
+    
+  </view>
+
+<!--垫高-->
+  <view style="height:90rpx;"></view>

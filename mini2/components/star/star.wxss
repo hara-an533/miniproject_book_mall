@@ -1,0 +1,6 @@
+/* components/star/star.wxss */
+
+.stars .image {
+  width: 24rpx;
+  height: 24rpx
+}

@@ -1,0 +1,17 @@
+<view class="scanContainer">
+
+  <view class="box">
+    <view class="myheader">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+
+  <view class="hello">你好，JAXK</view>
+
+  <view class="tip">请对准条形码扫描商品</view>
+
+  <view class="scan">
+    <image src="{{source}}images/scan-enter.png" bindtap="scan"></image>
+  </view>
+
+</view>

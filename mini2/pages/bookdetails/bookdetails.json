@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "star": "../../components/star/star",
+    "comment": "../../components/comment/comment"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "商品详情",
+  "navigationBarTextStyle": "black"
+}

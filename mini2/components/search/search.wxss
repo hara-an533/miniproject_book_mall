@@ -1,0 +1,22 @@
+/* components/search/search.wxss */
+
+.search {
+  width: 730rpx;
+  height: 57rpx;
+  /* background-color: #ffffbb; */
+  margin:0 auto;
+  margin-top: 10rpx;
+  border-radius: 40rpx;
+}
+
+.search .image {
+  width: 27rpx;
+  height: 27rpx;
+  margin-left: 20rpx;
+}
+
+.search .search-title {
+  font-size: 25rpx;
+  color: #B2B1B1;
+  margin-left: 13rpx;
+}

@@ -1,0 +1,118 @@
+/* pages/listbook/listbook.wxss */
+.flex {
+  display: flex;
+
+}
+.vcenter {
+  align-items: center;
+}
+
+.sb {
+  justify-content: space-between
+}
+.search {
+  width: 730rpx;
+  height: 57rpx;
+  background-color: #d2ffff;
+  margin:0 auto;
+  margin-top: 10rpx;
+  border-radius: 40rpx;
+}
+
+.search image {
+  width: 27rpx;
+  height: 27rpx;
+  margin-left: 20rpx;
+}
+
+.search .search-title {
+  font-size: 25rpx;
+  color: #B2B1B1;
+  margin-left: 13rpx;
+}
+
+.booktab{
+  flex-wrap: wrap;
+  /* justify-content: center */
+}
+.bookinfo{
+  width: 25%;
+  text-align: center;
+  margin-top: 30rpx;
+  border-bottom: 1rpx solid gray;
+  padding-bottom: 15rpx
+  
+}
+
+
+.navactive{
+  color: #ef0000;
+   border-bottom: 1rpx solid #ef0000;
+}
+
+
+.bookpic{
+  width: 250rpx;height: 255rpx
+}
+
+.stars image{
+  width: 24rpx;
+  height: 24rpx
+}
+
+.comment {
+  font-size: 24rpx;
+  color: #b8b8b8;
+  
+}
+
+
+.dateprice{
+  color: #E12616;
+  font-size: 24rpx;
+}
+
+.dateprice text:nth-child(2){
+  font-size: 34rpx;
+}
+
+
+.bookname{
+  height: 34rpx;
+  line-height: 38rpx;
+  font-size: 34rpx;
+  color: #000000;
+  overflow: hidden;
+ text-overflow: ellipsis;
+  display: -webkit-box;
+ word-break: break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+}
+.booklist-body{
+  padding: 27rpx;
+  border-bottom: 1px solid gray
+}
+.booklist-body-right{
+  flex-grow: 3
+}
+
+.booklist-body-left{
+    flex-grow: 1
+}
+
+
+.bookin{
+   font-size: 24rpx;
+  color: #b8b8b8;
+  flex-direction: column
+}
+
+.active{
+    display: block
+}
+
+
+.stars{
+  margin-right: 10rpx
+}

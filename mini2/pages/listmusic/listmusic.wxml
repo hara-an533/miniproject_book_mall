@@ -1,0 +1,190 @@
+<!--pages/listmusic/listmusic.wxml-->
+<view class="listmusicContainer">
+
+  <search title="搜索音乐商品" bgcolor="rgb(222, 242, 252)"></search>
+
+  <view class="label">
+    <view class="label-container">
+    <view class="label-item text {{index==active?'cur':''}}" wx:for="{{tabList}}" data-index="{{index}}" bindtap="btnItem">
+        {{item}}
+      </view>
+    </view>
+  </view>
+
+    <view class="music-item">
+      <view class="music-item-script">
+        <view>
+          <image src="{{source}}images/list_music01.jpg" mode="aspectFill" class="music-image"></image>
+        </view>
+      </view>
+
+      <view>
+        <view class="music-item-name">
+          小苹果
+        </view>
+        <view class="music-item-text">
+          原唱：筷子兄弟 / 作曲：王太利 / 填词：王太利
+        </view>
+        <view class="music-item-price">
+          ￥44.00
+        </view>
+        <view class="music-item-images">
+        <view>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star-gray.png" class="stars" mode="aspectFill"></image>
+          </view>
+          <view class="pinglun">
+            1498条评论
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+
+
+    <view class="music-item">
+      <view class="music-item-script">
+        <view>
+          <image src="{{source}}images/list_music01.jpg" mode="aspectFill" class="music-image"></image>
+        </view>
+      </view>
+
+      <view>
+        <view class="music-item-name">
+          小苹果
+        </view>
+        <view class="music-item-text">
+          原唱：筷子兄弟 / 作曲：王太利 / 填词：王太利
+        </view>
+        <view class="music-item-price">
+          ￥44.00
+        </view>
+        <view class="music-item-images">
+        <view>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star-gray.png" class="stars" mode="aspectFill"></image>
+          </view>
+          <view class="pinglun">
+            1498条评论
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+    <view class="music-item">
+      <view class="music-item-script">
+        <view>
+          <image src="{{source}}images/list_music01.jpg" mode="aspectFill" class="music-image"></image>
+        </view>
+      </view>
+
+      <view>
+        <view class="music-item-name">
+          小苹果
+        </view>
+        <view class="music-item-text">
+          原唱：筷子兄弟 / 作曲：王太利 / 填词：王太利
+        </view>
+        <view class="music-item-price">
+          ￥44.00
+        </view>
+        <view class="music-item-images">
+        <view>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star-gray.png" class="stars" mode="aspectFill"></image>
+          </view>
+          <view class="pinglun">
+            1498条评论
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+
+
+    <view class="music-item ">
+      <view class="music-item-script">
+        <view>
+          <image src="{{source}}images/list_music01.jpg" mode="aspectFill" class="music-image"></image>
+        </view>
+      </view>
+
+      <view>
+        <view class="music-item-name">
+          小苹果
+        </view>
+        <view class="music-item-text">
+          原唱：筷子兄弟 / 作曲：王太利 / 填词：王太利
+        </view>
+        <view class="music-item-price">
+          ￥44.00
+        </view>
+        <view class="music-item-images">
+        <view>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star-gray.png" class="stars" mode="aspectFill"></image>
+          </view>
+          <view class="pinglun">
+            1498条评论
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+
+    <view class="music-item">
+      <view class="music-item-script">
+        <view>
+          <image src="{{source}}images/list_music01.jpg" mode="aspectFill" class="music-image"></image>
+        </view>
+      </view>
+
+      <view>
+        <view class="music-item-name">
+          小苹果
+        </view>
+        <view class="music-item-text">
+          原唱：筷子兄弟 / 作曲：王太利 / 填词：王太利
+        </view>
+        <view class="music-item-price">
+          ￥44.00
+        </view>
+        <view class="music-item-images">
+        <view>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star.png" class="stars" mode="aspectFill"></image>
+          <image src="{{source}}ico/star-gray.png" class="stars" mode="aspectFill"></image>
+          </view>
+          <view class="pinglun">
+            1498条评论
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+
+
+</view>

@@ -1,0 +1,290 @@
+/* pages/music_detail/music_detail.wxss */
+.myaudio-info {
+  flex: 1;
+  position: relative;
+}
+
+.myaudio-info text {
+  position: absolute;
+}
+
+.audio-title {
+  left: 30rpx;
+  top: 30rpx;
+}
+
+.audio-author {
+  left: 30rpx;
+  top: 80rpx;
+  font-size: 26rpx;
+}
+
+.audio-time {
+  right: 100rpx;
+  top: 30rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.myaudio {
+  display: flex;
+  width: 90%;
+  height: 160rpx;
+  border: #CCC 1px solid;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #EFEFEF;
+  margin: 0 auto;
+}
+.musicPlant {
+  position: relative;
+  margin: 0 auto;
+  width: 680rpx;
+  height: 150rpx;
+  background-color: #FCFCFC;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+
+.myaudio-option {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audioOption {
+  width: 80rpx;
+  height: 80rpx;
+}
+.title {
+  width: 680rpx;
+  margin: 0 auto;
+  font-size: 26rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding-left: 10rpx;
+  border-left: #FF0000 6rpx solid;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.info {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 20rpx;
+  border-bottom: #EAEAEA 1px solid;
+
+  color: #333;
+}
+
+.infoValue {
+  color: #0066CC;
+}
+.title {
+  width: 680rpx;
+  margin: 0 auto;
+  font-size: 26rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding-left: 10rpx;
+  border-left: #FF0000 6rpx solid;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+.priceTitle, .lyricTitle, .commentTitle {
+  border-left: #0066CC 6rpx solid;
+  margin-top: 40rpx;
+}
+.titleBody {
+  padding: 0 40rpx;
+}
+.price {
+  color: #E43728;
+  margin-bottom: 10rpx;
+}
+.options_ {
+  display: flex;
+}
+.options-item {
+  position: relative;
+  width: 95rpx;
+  height: 34rpx;
+  border: #009999 1px solid;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  box-sizing: border-box;
+
+  margin-right: 20rpx;
+}
+.options-item image {
+  position: absolute;
+  left: 10rpx;
+  top: 4rpx;
+  width: 23rpx;
+  height: 23rpx;
+}
+
+.options-item text {
+  position: absolute;
+  right: 15rpx;
+  top: 0rpx;
+}
+.lyric {
+  width: 50%;
+  font-size: 20rpx;
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+.text{
+}
+
+
+.titleBody {
+  padding: 0 40rpx;
+}
+.priceTitle, .lyricTitle, .commentTitle {
+  border-left: #0066CC 6rpx solid;
+  margin-top: 50rpx;
+}
+.lyricTitle {
+  border-left: #9966CC 6rpx solid;
+}
+.book-comment {
+  width: 100%;
+  padding: 15rpx 30rpx;
+  box-sizing: border-box;
+  border-bottom: #EAEAEA 1px solid;
+}
+.book-comment-title {
+  /* width: 100%; */
+  height: 45rpx;
+  font-size: 26rpx;
+  border-left: 3px solid rgb(255, 204, 0);
+  line-height: 45rpx;
+  padding-left: 10rpx;
+  margin: 15rpx 0rpx 0rpx 30rpx;
+}
+.book-comment-content {
+  width: 100%;
+  height: 190rpx;
+}
+
+.book-comment-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40%;
+  padding: 15rpx 0rpx;
+}
+
+.book-comment-head {
+  width: 11%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.book-comment-head image {
+  width: 100%;
+  height: 100%;
+}
+
+.book-comment-name {
+  width: 80%;
+  height: 100%;
+  /* background: red; */
+  margin-left: 15rpx;
+  font-size: 14px;
+}
+
+.book-user-evaluation {
+  width: 100%;
+  font-size: 20rpx;
+  padding-left: 15rpx;
+  color: #939393;
+}
+
+.options_ {
+  display: flex;
+}
+
+.music-bottom {
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom {
+  width: 100%;
+  height: 90rpx;
+}
+
+.music-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.music-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.music-right view {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy {
+  background-color: rgb(255, 179, 80);
+  color: #fff;
+}
+
+.car {
+  background-color: rgb(229, 62, 48);
+  color: #fff;
+}
+
+.music-left view.options {
+  width: 33%;
+}
+.music-left view.options view {
+
+  display: flex;
+  justify-content: center;
+
+}
+.music-left view image {
+  margin-top: 8rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.option-item {
+  font-size: 20rpx;
+  color: #666;
+}
+.bottomTitle{
+  height: 90rpx;
+}

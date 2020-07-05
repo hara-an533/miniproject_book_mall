@@ -1,0 +1,205 @@
+/* pages/bookdetails/bookdetails.wxss */
+
+.flex{
+  display: flex
+}
+
+
+.vcenter{
+  align-items: center
+}
+
+.hcenter{
+  justify-content: center
+}
+
+.bookContainer{
+  /* padding: 0rpx 36rpx */
+}
+
+.swiper-Ad{
+  width: 682rpx;
+  height: 778rpx
+}
+swiper{
+  width: 100%;
+  height: 100%;
+   padding: 0rpx 36rpx 
+}
+swiper-item{
+  width: 100%;
+  height: 100%
+}
+.ad-image{
+  width: 682rpx;
+  height: 778rpx
+}
+
+
+.namewrap{
+   padding: 0rpx 36rpx 
+}
+.bookname{
+  justify-content: space-between;
+  margin-top: 48rpx;
+  border-left: 2px solid red;
+  padding-left: 10rpx;
+  font-weight: bold
+}
+
+.collection{
+  width: 135rpx;
+  height: 41rpx
+}
+
+
+.bookdescript{
+  margin-top: 21rpx;
+  font-size: 24rpx;
+  color: gray;
+  height: 142rpx;
+ line-height: 30rpx;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ word-break: break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 5; 
+}
+
+.dateprice{
+  color: #E12616;
+  margin-top: 21rpx;
+  font-size: 24rpx;
+  font-weight: bold
+}
+
+.dateprice text:nth-child(2){
+  font-size: 34rpx;
+}
+
+.sharp{
+ /* width: 375rpx; */
+  margin-top: 26rpx;
+  height: 15rpx;
+  background: #eaeaea
+}
+
+.sharp2{
+ height: 15rpx;
+  background: #eaeaea
+}
+
+
+
+
+
+.aboutinfo{
+    justify-content: space-between;
+  margin-top: 21rpx;
+  border-left: 2px solid #9966cc;
+  padding-left: 10rpx;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+  margin-left: 36rpx
+}
+
+.bookinfowrap{
+  /* padding: 0rpx 36rpx  */
+}
+
+
+.author{
+  justify-content: space-between;
+  font-size: 26rpx;
+  color: gray;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 18rpx;
+   padding-left:  46rpx;
+   padding-right:  36rpx;
+   padding-top: 18rpx
+}
+
+
+.arrow{
+  width: 19rpx;
+  height: 19rpx
+}
+
+.aboutcomment{
+    justify-content: space-between;
+  margin-top: 21rpx;
+  border-left: 2px solid #ffcc00;
+  padding-left: 10rpx;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+  margin-left: 36rpx
+}
+
+
+
+.headpic{
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  margin-right: 10rpx
+}
+
+.username{
+  font-size: 28rpx
+}
+
+.commentdescript{
+  padding: 0rpx 36rpx 36rpx;
+  margin-top: 33rpx;
+  border-bottom: 1px solid  #eaeaea
+}
+
+.commentcontents{
+  margin-top: 18rpx;
+  font-size: 24rpx;
+  color: gray
+}
+
+
+.sharp3{
+  height: 48rpx;
+  background: #eaeaea
+}
+
+
+
+.tabbar{
+  height: 101rpx;
+  justify-content: space-between
+}
+
+.gray{
+width: 50rpx;
+height: 50rpx;
+}
+
+.tabbarcontent{
+  flex-direction: column;
+  font-size: 26rpx;
+  color: gray;
+  align-items: center;
+  margin-left: 15rpx
+}
+
+.button{
+
+  width: 230rpx;
+  height: 101rpx;
+  color: #ffff;
+  text-align: center;
+  line-height: 101rpx
+}
+
+.buynow{
+  background: #ffb530
+}
+
+.addcart{
+  background: #e53e30
+}

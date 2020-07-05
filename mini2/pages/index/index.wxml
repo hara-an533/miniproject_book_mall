@@ -1,0 +1,520 @@
+<view class="indexContainer">
+  <!-- 搜索 -->
+  <search title="搜索全部商品" bgcolor="#ffffbb"></search>
+
+  <!-- 轮播 -->
+  <view class="swiper-Ad">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+      <block wx:for="{{imgUrl}}" wx:key="index">
+        <swiper-item>
+          <view>
+            <image src="{{item}}" mode="aspectFill" class="ad-image" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 导航 -->
+  <view class="navigator flex ">
+    <view class="navigator-item">
+      <view class="nav-img">
+        <image src="{{source}}images/nav_hotsale.png" />
+      </view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+    <view class="navigator-item">
+      <view class="nav-img">
+        <image src="{{source}}ico/newbook.png" />
+      </view>
+      <view class="nav-txt">新书上架</view>
+    </view>
+    <view class="navigator-item">
+      <view class="nav-img">
+        <image src="{{source}}images/nav_99.png" />
+      </view>
+      <view class="nav-txt">9.9包邮</view>
+    </view>
+    <view class="navigator-item">
+      <view class="nav-img">
+        <image src="{{source}}images/nav_music.png" />
+      </view>
+      <view class="nav-txt">音乐在线</view>
+    </view>
+    <view class="navigator-item">
+      <view class="nav-img">
+        <image src="{{source}}images/nav_movie.png" />
+      </view>
+      <view class="nav-txt">电影频道</view>
+    </view>
+
+
+    <view class="navigator-item" wx:for="{{bookNavList}}" wx:key="index" data-c2id="{{item.id}}" bindtap="goGoBookList">
+      <view class="nav-img">
+        <image src="{{item.url}}" />
+      </view>
+      <view class="nav-txt">{{item.c2name}}</view>
+    </view>
+
+
+  </view>
+  <!-- 畅销书top3 -->
+  <view class="hotsale-top3">
+    <view class="hotsale-title flex">
+      <text>畅销书排行榜-TOP3</text>
+      <text>查看更多></text>
+    </view>
+    <view class="hotsale-body flex sb">
+      <view class="hotsale-item flex ">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill" />
+        </view>
+        <view class="hotsale-item-title">
+          阿双方大师傅的说法是 发
+        </view>
+        <view class="hotsale-item-price">
+          ￥
+          <text>44</text>.56
+        </view>
+      </view>
+      <view class="hotsale-item flex ">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill" />
+        </view>
+        <view class="hotsale-item-title">
+          阿双方大师傅的说法是 发
+        </view>
+        <view class="hotsale-item-price">
+          ￥
+          <text>44</text>.56
+        </view>
+      </view>
+      <view class="hotsale-item flex ">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill" />
+        </view>
+        <view class="hotsale-item-title">
+          阿双方大师傅的说法是 发
+        </view>
+        <view class="hotsale-item-price">
+          ￥
+          <text>44</text>.56
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 快讯 -->
+  <view class="fastnewswrap ">
+    <view class="fastnews flex vcenter">
+      <image src="{{source}}images/fnews.jpg" />
+      <swiper class="tab-right" vertical="true" autoplay="true" circular="true" interval="2000" display-multiple-items='1'>
+        <view class="right-item">
+          <block wx:for-index="idx" wx:for='{{fastnewslist}}' wx:key="index">
+            <swiper-item>
+              <view class='content-item'>
+                {{item}}
+
+              </view>
+            </swiper-item>
+          </block>
+
+        </view>
+      </swiper>
+
+    </view>
+
+
+  </view>
+  <!-- 新书特价包邮 -->
+  <view class="newbook">
+
+    <view class="newbooktitle flex">
+      <text>畅销书排行榜-TOP3</text>
+      <text>查看更多></text>
+    </view>
+    <view class="hotsale-body flex sb">
+
+      <view class="hotsale-item flex ">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill" />
+        </view>
+        <view class="hotsale-item-title">
+          阿双方大师傅的说法是 发
+        </view>
+        <view class="hotsale-item-price">
+          ￥
+          <text>44</text>.56
+        </view>
+        <view class="free99">
+          <image src="{{source}}ico/ico99.png"></image>
+        </view>
+      </view>
+
+      <view class="hotsale-item flex ">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill" />
+        </view>
+        <view class="hotsale-item-title">
+          阿双方大师傅的说法是 发
+        </view>
+        <view class="hotsale-item-price">
+          ￥
+          <text>44</text>.56
+        </view>
+      </view>
+      <view class="hotsale-item flex ">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill" />
+        </view>
+        <view class="hotsale-item-title">
+          阿双方大师傅的说法是 发
+        </view>
+        <view class="hotsale-item-price">
+          ￥
+          <text>44</text>.56
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="grand">
+  </view>
+
+  <!-- 五星第一 -->
+  <view class="fivestars">
+    <view class="fivestars-title flex vcenter">
+
+      <view class="starTitle flex vcenter">
+        <view class="star-ico"><image src="{{source}}ico/stars-outline.png"></image></view>
+        <view class="star-title">五星图书榜第1名</view>
+      </view>
+
+      <view><text>查看更多></text></view>
+    </view>
+    <view class="fivestars-body flex">
+      <view class="fivestars-body-right flex">
+        <view class="booktitle">
+        谋杀鉴赏(《读者的选择》最佳小说奖、国际推理小说国际推理小说“
+        </view>     
+        <view class="comment flex vcenter">
+          <star nums="5"></star>
+          <text>9325条评论</text>
+        </view>
+        <view class="price flex ">
+          <view class="dateprice">
+            <text>￥</text>
+            <text>26</text>
+            <text>.10</text>
+          </view>
+          
+        </view>
+      </view>
+      <view class="fivestars-body-left">
+        <image src="{{source}}images/temp2.jpg" class="bookimage" />
+      </view>
+    </view>
+
+    <view class="fivestars-title  flex vcenter">
+
+      <view class="starTitle music-star-title flex vcenter">
+        <view class="star-ico"><image src="{{source}}ico/stars-outline.png"></image></view>
+        <view class="star-title">五星音乐榜第1名</view>
+      </view>
+
+      <view><text>查看更多></text></view>
+    </view>
+
+    <view class="fivestars-body flex">
+      <view class="fivestars-body-right flex">
+        <view class="booktitle">
+        谋杀鉴赏(《读者的选择》最佳小说奖、国际推理小说国际推理小说国际推理小说“
+        </view>     
+        <view class="comment flex vcenter">
+          <view class="stars">
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+          </view>
+          <text>9325条评论</text>
+        </view>
+        <view class="price flex ">
+          <view class="dateprice">
+            <text>￥</text>
+            <text>26</text>
+            <text>.10</text>
+          </view>
+          
+        </view>
+      </view>
+      <view class="fivestars-body-left">
+        <image src="{{source}}images/temp2.jpg" class="bookimage" />
+      </view>
+    </view>
+
+    <view class="fivestars-title flex vcenter">
+
+      <view class="starTitle film-star-title flex vcenter">
+        <view class="star-ico"><image src="{{source}}ico/stars-outline.png"></image></view>
+        <view class="star-title ">五星电影榜第1名</view>
+      </view>
+
+      <view><text>查看更多></text></view>
+    </view>
+
+    <view class="fivestars-body flex">
+      <view class="fivestars-body-right flex">
+        <view class="booktitle">
+        谋杀鉴赏(《读者的选择》最佳小说奖、国际推理小说国际推理小说“
+        </view>     
+        <view class="comment flex vcenter">
+          <view class="stars">
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+            <image src="{{source}}ico/star.png" mode="aspectFill" />
+          </view>
+          <text>9325条评论</text>
+        </view>
+        <view class="price flex ">
+          <view class="dateprice">
+            <text>￥</text>
+            <text>26</text>
+            <text>.10</text>
+          </view>
+          
+        </view>
+      </view>
+      <view class="fivestars-body-left">
+        <image src="{{source}}images/temp2.jpg" class="bookimage" />
+      </view>
+    </view>
+
+
+
+  </view>
+  <!-- 流行音乐top6 -->
+  <view class="popularmusic">
+    <view class="popularmusic-title flex">
+      <text>流行音乐榜-TOP6</text>
+      <text>查看更多></text>
+    </view>
+    <view class="popular-body flex">
+        <view class="song flex">
+          <image src="{{source}}images/music1.png" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+        <view class="song flex">
+          <image src="{{source}}images/music1.png" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+        <view class="song flex">
+          <image src="{{source}}images/music1.png" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+        <view class="song flex">
+          <image src="{{source}}images/music1.png" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+        <view class="song flex">
+          <image src="{{source}}images/music1.png" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+        <view class="song flex">
+          <image src="{{source}}images/music1.png" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+    
+    </view>
+
+
+  </view>
+  <!-- 热门电影top6 -->
+
+  <view class="grand-green"></view>
+
+  <view class="hotfilm">
+   <view class="hotfilm-title flex">
+      <text>流行音乐榜-TOP6</text>
+      <text>查看更多></text>
+    </view>
+    <view class="popular-body flex">
+        <view class="song flex">
+          <image src="{{source}}images/film1.jpg" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+           <view class="song flex">
+          <image src="{{source}}images/film1.jpg" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+           <view class="song flex">
+          <image src="{{source}}images/film1.jpg" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+           <view class="song flex">
+          <image src="{{source}}images/film1.jpg" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+           <view class="song flex">
+          <image src="{{source}}images/film1.jpg" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+           <view class="song flex">
+          <image src="{{source}}images/film1.jpg" class="songpic" />
+          <text>沙漠骆驼</text>
+          <view class="stars" >
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+             <image src="{{source}}ico/star-yellow.png" mode="aspectFill" />
+          </view>
+           <view class="dateprice">
+            <text>￥</text>
+            <text>3</text>
+            <text>.10</text>
+          </view>
+        </view> 
+
+          
+
+    </view>   
+
+
+       
+  </view>
+   
+
+</view>

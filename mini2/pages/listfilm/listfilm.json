@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search": "../../components/search/search"
+  },
+  "navigationBarTitleText": "光谷书城",
+  "navigationBarTextStyle": "black"
+    
+}

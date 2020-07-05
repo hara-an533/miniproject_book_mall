@@ -1,0 +1,312 @@
+
+.ad-image {
+  width: 100%;
+  height: 250rpx;
+}
+
+.swiper-Ad swiper {
+  height: 250rpx;
+}
+
+.swiper-Ad {
+  padding-top: 16rpx;
+}
+
+.navigator {
+  flex-wrap: wrap;
+  padding: 0 10rpx;
+}
+.navigator-item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25rpx;
+}
+
+.navigator-item image{
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.nav-txt {
+  font-size: 23rpx;
+  color: #5D5D5D;
+  margin-top: -5rpx;
+}
+
+.hotsale-top3 {
+  background: #FBBEBD;
+  margin-top: 26rpx;
+  padding: 24rpx;
+}
+
+.hotsale-title {
+  justify-content: space-between;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.hotsale-item {
+  position: relative;
+  width: 32%;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rpx;
+  border-radius: 10rpx;
+}
+.hotsale-body {
+  padding-top: 23rpx;
+}
+.hotsale-item-photo image {
+  width: 195rpx;
+  height: 195rpx;
+}
+.hotsale-item-title {
+  font-size: 24rpx;
+  color: #484848;
+  padding: 0 20rpx;
+  height: 60rpx;
+  overflow: hidden;
+}
+.hotsale-item-price {
+  color: #E12616;
+  font-size: 24rpx;
+  margin: 10rpx 0;
+}
+
+.hotsale-item-price text {
+  font-size: 32rpx;
+}
+
+.free99 image {
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  width: 74rpx;
+  height: 74rpx;
+}
+
+.fastnewswrap{
+background-image: linear-gradient( #FBBEBD , #99cccc);
+}
+.fastnews{
+  width: 700rpx;
+  height: 70rpx;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  border-radius: 10rpx;
+    padding: 10rpx;
+    justify-content: space-between;
+    background: #fff
+
+}
+
+.fastnews image{
+  width: 90rpx;
+  height: 40rpx;
+  /* border: 1px solid red */
+  
+}
+
+.tab-right{
+  width: 566rpx;
+  height: 40rpx;
+  
+}
+
+.newbook{
+  background: #99cccc;
+  
+  padding: 24rpx;
+}
+.newbooktitle{
+  justify-content: space-between;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+
+.grand{
+  width: 100%;
+  height: 60rpx;
+  background-image: linear-gradient( #99cccc,#ffff);
+}
+
+
+.fivestars{
+ 
+  /* padding: 24rpx */
+}
+
+.starTitle {
+  width: 318rpx;
+  height: 51rpx;
+  /* background-color: red; */
+  border-bottom-right-radius: 25rpx;
+  background-image: linear-gradient(45deg,#D8B4FC,#B065F9);
+
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.music-star-title {
+  background-image: linear-gradient(45deg,#FFCD81,#FF9900);
+
+}
+
+.film-star-title{
+  background-image: linear-gradient(45deg,#FF9E98,#FF3B30);
+
+}
+
+.starTitle .star-ico image {
+  width: 38rpx;
+  height: 36rpx;
+}
+.star-ico {
+  padding-left: 17rpx;
+  margin-right: 10rpx;
+}
+.star-title {
+  margin-top: -4rpx;
+}
+.fivestars-title{
+  color: #b8b8b8;
+  font-size: 24rpx;
+  justify-content: space-between;
+  padding-right: 24rpx;
+
+}
+.fivestars-title image{
+  width: 317rpx;
+  height: 52rpx;
+  
+}
+.fivestars-body{
+  padding: 24rpx;
+ 
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.stars{
+  margin-right: 10rpx
+}
+
+.stars image{
+  width: 24rpx;
+  height: 24rpx
+}
+
+.comment {
+  font-size: 24rpx;
+  color: #b8b8b8;
+  
+}
+
+.booktitle{
+  height: 83rpx;
+  display: flex;
+ align-items: center;
+ line-height: 40rpx;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ word-break: break-all;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2; 
+  
+}
+
+
+.bookimage{
+  width: 180rpx;
+  height: 218rpx;
+  flex-shrink: 0
+}
+
+.price{
+  align-items: flex-end;
+}
+
+.dateprice{
+  color: #E12616;
+  font-size: 24rpx;
+}
+
+.dateprice text:nth-child(2){
+  font-size: 34rpx;
+}
+
+
+.originprice{
+  color: #b8b8b8;
+  font-size: 24rpx;
+  text-decoration:line-through
+}
+
+.fivestars-body-right{
+  width: 450rpx;
+  flex-direction: column;
+  justify-content: space-between
+  
+
+}
+
+
+
+.popularmusic{
+  padding: 24rpx;
+  background: #aee800
+}
+
+.popularmusic-title{
+justify-content: space-between;
+  font-size: 24rpx;
+  color: #fff;
+  padding-bottom: 25rpx
+}
+
+.popular-body{
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+  
+.song{
+  background: #ffff;
+  flex-direction: column;
+  width: 28%;
+  padding: 15rpx;
+  border-radius: 10rpx;
+  margin-bottom: 35rpx;
+
+  /* align-items: center */
+}
+
+.songpic{
+  width: 195rpx;
+  height: 195rpx;
+  margin: 0 auto
+}
+
+.grand-green{
+   width: 100%;
+  height: 40rpx;
+  background-image: linear-gradient( #aee800,#ffaf37);
+}
+
+.hotfilm{
+   padding: 24rpx;
+  background: #ffaf37
+}
+
+.hotfilm-title{
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #fff;
+  padding-bottom: 25rpx
+}
+

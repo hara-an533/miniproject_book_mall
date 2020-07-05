@@ -1,0 +1,98 @@
+<!--pages/bookdetails/bookdetails.wxml-->
+<view class="bookContainer">
+
+  <!-- 轮播图 -->
+  <view class="swiper-Ad">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+      <block wx:for="{{Book.thumb}}" wx:key="*this">
+        <swiper-item>
+          <view>
+            <image src="{{item.url}}" mode="aspectFill" class="ad-image" />
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!-- 图书介绍 -->
+  <view class="namewrap">
+    <view class="bookname flex vcenter">
+      <view>{{Book.title}}</view>
+      <image class="collection" src="{{favoriteStatus ? favorite2 : favorite1}}" bindtap="favorite" />
+    </view>
+    <view class="bookdescript">
+      <rich-text nodes="{{Book.descript}}"></rich-text>
+    </view>
+
+    <view class="dateprice">
+      <text>￥</text>
+      <text>{{Book.price_int}}</text>
+      <text>.{{Book.price_dec}}</text>
+    </view>
+
+  </view>
+
+
+  <!-- 分割 -->
+  <view class="sharp"></view>
+
+  <view class="bookinfowrap">
+    <view class="aboutinfo">相关信息</view>
+    <view class="bookinfo">
+      <view class="author flex">
+        <view>作者
+          <text decode="{{true}}">&nbsp;&nbsp;{{Book.author}}</text>
+        </view>
+        <view>查看作品
+          <image class="arrow" src="{{source}}ico/arrow-right-gray.png" />
+        </view>
+      </view>
+
+      <view class="author flex">
+        <view>出版
+          <text decode="{{true}}">&nbsp;&nbsp;{{Book.publicer}}</text>
+        </view>
+        <view bindtap="moreWorks" id="{{Book.publicer}}">查看作品
+          <image class="arrow" src="{{source}}ico/arrow-right-gray.png" />
+        </view>
+      </view>
+
+      <view class="author flex">
+        <view>分类
+          <text decode="{{true}}">&nbsp;&nbsp;图书>{{Book.c2name}}</text>
+        </view>
+        <!-- <view>查看作品 <image class="arrow" src="{{source}}ico/arrow-right-gray.png"/></view> -->
+      </view>
+
+
+    </view>
+
+
+  </view>
+
+  <view class="sharp2"></view>
+
+  <!--评论-->
+  <comment></comment>
+
+  <view class="footer">
+    <view class="views">
+      <view class="cuole" bindtap="goToHome">
+        <view><image src="{{source}}ico/tabbar_home_gray.png" /></view>
+        <view class="picture">首页</view>
+      </view>
+      <view class="cuole">
+        <view><image src="{{source}}ico/share.png" /></view>
+        <view class="picture">分享</view>
+      </view>
+      <view class="cuole postionms" bindtap="goToCart">
+        <view><image src="{{source}}ico/tabbar_cart_gray.png" /></view>
+        <view class="picture">购物车</view>
+        <view class="postionms-1" wx:if="{{currentCartCounts}}">{{currentCartCounts}}</view>
+      </view>
+    </view>
+    <view class="views-2 yellow">立即购买</view>
+    <view class="views-2 red" bindtap="addToCart">加入购物车</view>
+  </view>
+
+</view>

@@ -1,0 +1,55 @@
+/* pages/mycomment/mycomment.wxss */
+
+.CONTAINER {
+  background-color: #f1f1f1;
+}
+.flex {
+  display: flex
+}
+.sb {
+  justify-content: space-between;
+}
+.vcenter {
+  align-items: center
+}
+.center {
+  justify-content: center
+}
+.first-box {
+  padding: 0 30rpx;
+  background-color: #FFF;
+  padding-bottom: 20rpx;
+}
+.title {
+  font-size: 26rpx;
+  padding: 20rpx 0rpx;
+  border-bottom: 1px solid #ccc;
+  border-bottom-style: dotted;
+
+}
+.starFive {
+  padding: 20rpx
+}
+.starFive image{
+ width: 40rpx;
+ height: 40rpx;
+ margin-right: 20rpx; 
+}
+.text {
+  border: 1px solid #ccc;
+  color: #5d5d5d;
+  font-size: 21rpx;
+  padding: 30rpx;
+}
+.queding {
+  width: 110rpx;
+  height: 32rpx;
+  background-color: #D81E06;
+  margin: 20rpx auto;
+  color: white;
+  border-radius: 20rpx;
+  font-size: 18rpx;
+}
+.twO {
+  margin-top: 40rpx;
+}

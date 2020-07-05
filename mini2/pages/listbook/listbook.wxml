@@ -1,0 +1,66 @@
+<!--pages/listbook/listbook.wxml-->
+<view class="bookContainer">
+
+<!--搜索-->
+	<search title="搜索图书商品" bgcolor="#d2ffff"></search>
+
+<!--导航-->
+	<view class="booktab flex">
+		<block wx:for="{{list}}" wx:key="index">
+			<view class="bookinfo {{item.active}}" id="{{item.id}}" bindtap="check">{{item.c2name}}</view>
+		</block>
+	</view>
+
+<!--列表-->
+	<view class="book">
+		<view class=" booklist-body flex vcenter" wx:for="{{navDataList}}" wx:key="index" id="{{item.id}}" bindtap="goToBookDetail">
+			<view class="booklist-body-left">
+				<image class="bookpic" mode="aspectFill" src="{{item.poster}}" />
+			</view>
+
+			<view class="booklist-body-right">
+				<view class="bookname">
+					{{item.title}}
+				</view>
+
+				<view class="bookin flex">
+					<view class="author">作者:<text>{{item.author}}</text></view>
+					<text>出版社:<text>{{item.publicer}}</text> </text>
+					<text>出版时间:<text>{{item.dt}}</text> </text>
+					<text class="descript">{{item.descript}}</text>
+				</view>
+
+
+				<view>
+					<view class="price flex ">
+						<view class="dateprice">
+							<text>￥</text>
+							<text>{{item.price_int}}</text>
+							<text>.{{item.price_dec}}</text>
+						</view>
+					</view>
+
+
+					<view class="comment flex vcenter">
+						<view class="stars">
+							<star nums="3"></star>
+						</view>
+						<text>9325条评论</text>
+					</view>
+
+
+					<view>
+
+
+					</view>
+
+				</view>
+
+			</view>
+		</view>
+	</view>
+
+  <!--是否有数据-->
+  <view wx:if="{{!hasData}}">暂无数据!</view>
+
+</view>

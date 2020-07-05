@@ -1,0 +1,16 @@
+<!--pages/mycomment/mycomment.wxml-->
+<view class="CONTAINER">
+  <view class="first-box">
+    <view class="title flex vcenter center">{{commentData.title}}</view>
+    <view class="starFive flex vcenter center">
+
+      <image src="{{item}}" wx:for="{{starUrl}}" wx:key="index" id="{{index}}" bindtap="selectStar"/>
+
+    </view>
+    <view class="text">
+     <textarea name="mycomment" value="{{commentData.notes}}" bindinput="getNotes"></textarea>
+    </view>
+    <view class="queding flex vcenter center" bindtap="saveComment">确定</view>
+  </view>
+  
+</view>

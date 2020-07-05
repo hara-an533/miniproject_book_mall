@@ -1,0 +1,5 @@
+<view class="stars flex vcenter">
+  <block wx:for="{{starList}}" wx:key="index">
+    <image class="image" src="{{item}}" mode="aspectFill" />
+  </block>
+</view>

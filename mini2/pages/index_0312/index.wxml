@@ -1,0 +1,129 @@
+<view class="indexContainer">
+
+  <!--搜素-->
+  <view class="search flex vcenter">
+    <view>
+      <image src="{{source}}ico/search.png" />
+    </view>
+    <view class="search-title">搜素全部商品</view>
+  </view>
+
+  <!--轮播-->
+  <view class="swiper-Ad">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+      <block wx:for="{{imgUrl}}" wx:key="*this">
+        <swiper-item>
+          <view><image src="{{item}}" mode="aspectFill" class="ad-image" /></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--导航-->
+  <view class="navigator flex">
+
+    <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_newbook.png" /></view>
+      <view class="nav-txt">新书上架</view>
+    </view>
+
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+     <view class="navigator-item">
+      <view class="nav-img"><image src="{{source}}images/nav_hotsale.png" /></view>
+      <view class="nav-txt">热销图书</view>
+    </view>
+    
+  </view>
+
+  <!--畅销书TO3-->
+  <view class="hotsale-top3">
+    <view class="hotsale-title flex">
+      <text>畅销书排行榜-TOP3</text>
+      <text>查看更多></text>
+    </view>
+    <view class="hotsale-body flex sb">
+
+
+      <view class="hotsale-item flex">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill"></image>
+        </view>
+        <view class="hotsale-item-title">
+          爽肤水的方式的肥嘟嘟发个胜多负少的是的山东省地方
+        </view>
+        <view class="hotsale-item-price">
+          ￥<text>44</text>.56
+        </view>
+      </view>
+
+      <view class="hotsale-item flex">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill"></image>
+        </view>
+        <view class="hotsale-item-title">
+          爽肤水的方式的肥嘟嘟发个胜多负少的是的山东省地方
+        </view>
+        <view class="hotsale-item-price">
+          ￥<text>44</text>.56
+        </view>
+      </view>
+
+      <view class="hotsale-item flex">
+        <view class="hotsale-item-photo">
+          <image src="{{source}}images/demo.gif" mode="aspectFill"></image>
+        </view>
+        <view class="hotsale-item-title">
+          爽肤水的方式的肥嘟嘟发个胜多负少的是的山东省地方
+        </view>
+        <view class="hotsale-item-price">
+          ￥<text>44</text>.56
+        </view>
+      </view>
+      
+
+
+
+    </view>
+  </view>
+
+  <!--快讯-->
+  <!--新书特价包邮-->
+  <!--五星第一-->
+  <!--流行音乐TOP6-->
+  <!--热门电影TOP6-->
+</view>

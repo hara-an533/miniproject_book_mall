@@ -1,0 +1,117 @@
+<!--pages/music_detail/music_detail.wxml-->
+<view>
+  <view class="title">相关信息</view>
+
+  <view class="myaudio">
+    <view class="myaudio-option" style="background:#ff0000 url('{{poster}}') no-repeat;background-size:cover;">
+      <image class="audioOption" src="{{playState ? audioBtn_pause : audioBtn_play}}" bindtap="{{playState ? 'pauseAudio' : 'playAudio'}}"></image>
+    </view>
+    <view class="myaudio-info">
+      <text class="audio-title">{{audioTitle}}</text>
+      <text class="audio-author">{{audioAuthor}}</text>
+      <text class="audio-time">{{audioTime}}</text>
+    </view>
+
+  </view>
+  <view class="musicPlant">
+    <view class="info titleBody">
+      <text>歌名：</text>
+      <text class="infoValue">记事本</text>
+    </view>
+    <view class="info titleBody">
+      <text>歌手：</text>
+      <text class="infoValue" decode="true">陈慧琳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text>作曲：</text>
+      <text class="infoValue" decode="true">陈慧琳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text>作词：</text>
+      <text class="infoValue">陈慧琳</text>
+    </view>
+    <view class="info titleBody">
+      <text>类型：</text>
+      <text class="infoValue">中文经典</text>
+    </view>
+  </view>
+
+  <view class="title priceTitle">单片会员价</view>
+  <view class="titleBody">
+    <view class="price">￥38.09</view>
+    <view class="options_">
+      <view class="options-item">
+        <image src="{{xiazai}}"></image>
+        <text>下载</text>
+      </view>
+      <view class="options-item">
+        <image src="{{bofnag}}"></image>
+        <text>播放</text>
+      </view>
+      <view class="options-item">
+        <image src="{{shouchang}}"></image>
+        <text>收藏</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="title lyricTitle">歌词</view>
+  <view class="titleBody lyric">
+    <text class="text">
+  翻开随身携带的记事本，写着许多事都是关于你
+你讨厌被冷落，习惯被守候
+寂寞才找我，我看见自己写下的心情
+把自己放在卑微的后头，等你等太久
+想你泪会流，而幸福快乐是什么
+爱的痛了，痛的哭了
+哭的累了，日记本里页页执着
+记载着你的好，像上瘾的毒药
+它反覆骗着我，爱的痛了
+痛的哭了，哭的累了
+矛盾心里总是强求，劝自己要放手
+闭上眼让你走，烧掉日记重新来过
+我看见自己写下的心情，把自己放在卑微的后头
+等你等太久，想你泪会流
+而幸福快乐是什么，爱的痛了
+痛的哭了，哭的累了
+日记本里页页执着，记载着你的好
+像上瘾的毒药，它反复骗着我
+爱的痛了，痛的哭了
+哭的累了，矛盾心里总是强求
+劝自己要放手，闭上眼让你走
+烧掉日记重新来过，爱的痛了
+痛的哭了，哭的累了
+矛盾心里总是强求，劝自己要放手
+闭上眼让你走，烧掉日记重新来过
+    </text>
+  </view>
+
+
+  <!--评论-->
+  <comment></comment>
+
+  <!--底部购物车-->
+  <view class="footer">
+    <view class="views">
+      <view class="cuole">
+        <view>
+          <image src="{{source}}ico/tabbar_home_gray.png" />
+        </view>
+        <view class="picture">首页</view>
+      </view>
+      <view class="cuole">
+        <view>
+          <image src="{{source}}ico/share.png" />
+        </view>
+        <view class="picture">分享</view>
+      </view>
+      <view class="cuole postionms">
+        <view>
+          <image src="{{source}}ico/tabbar_cart_gray.png" />
+        </view>
+        <view class="picture">购物车</view>
+        <view class="postionms-1">1</view>
+      </view>
+    </view>
+    <view class="views-2 yellow">立即购买</view>
+    <view class="views-2 red">加入购物车</view>
+  </view>
+
+
+</view>

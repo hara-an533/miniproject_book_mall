@@ -1,0 +1,14 @@
+<!--pages/mycomment/mycomment.wxml-->
+<view class="CONTAINER first-box ">
+
+  <view class="list-item" wx:for="{{DATA}}" wx:key="index">
+    <view class="title">{{item.productInfo.title}}</view>
+    <view class="star">{{item.stars}}颗星</view>
+    <view class="content">{{item.notes}}</view>
+    <view class="option">
+      <text id="{{item.id}}" data-cid="{{item.id}}" data-title="{{item.productInfo.title}}" data-stars="{{item.stars}}" data-notes="{{item.notes}}" bindtap="editComment">修改</text>
+      <text data-cid="{{item.id}}" bindtap="delComment">删除</text>
+    </view>
+  </view>
+  
+</view>

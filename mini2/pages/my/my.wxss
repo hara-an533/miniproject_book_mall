@@ -1,0 +1,243 @@
+
+
+.myTop {
+  height: 320rpx;
+  background:linear-gradient(#F53F4A,#FB4583);
+}
+
+.opts {
+  height: 47rpx;
+  background: url('https://www.fuhushi.com/source/static/images/arc.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.myheaderIco {
+  width: 122rpx;
+  margin: 0 auto;
+  padding-top: 12rpx;
+}
+
+.myheaderIco image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  border: #FFF 6rpx solid;
+}
+
+.myhello{
+  font-size: 20rpx;
+  color: #FFF;
+  text-align: center;
+}
+
+.myopts {
+  padding: 30rpx 20rpx 0 20rpx;
+}
+
+.myoptsItem {
+  width: 20%;
+  text-align: center;
+}
+
+.myoptsItemIco image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.myoptsItemName {
+  color: #FFF;
+  font-size: 22rpx;
+}
+
+.optsBox {
+  margin: 0 auto;
+  width: 439rpx;
+  height: 96rpx;
+  background: #FFF;
+  border-radius: 10rpx;
+}
+
+
+.optsItem {
+  width: 33.33%;
+  text-align: center;
+}
+
+.optsItemIco {
+  padding-top: 2rpx;
+}
+
+.optsItemIco image {
+  width: 42rpx;
+  height: 42rpx;
+}
+.optsItemName {
+  font-size: 22rpx;
+  color: #666;
+  margin-top: -3rpx;
+}
+
+
+.recommendTitleBox {
+  margin-top: 100rpx;
+  justify-content: center;
+}
+
+.recommendTitle image {
+  width: 38rpx;
+  height: 30rpx;
+}
+
+.recommendTitle text {
+  font-size: 26rpx;
+  color: #F7415E;
+}
+
+
+.recommendItem {
+  width: 224rpx;
+  height: 345rpx;
+  background: #FFF;
+  border-radius: 10rpx;
+
+  margin-bottom: 20rpx;
+}
+
+.recommendList {
+  flex-wrap: wrap;
+  padding: 25rpx;
+}
+
+.recommendItemThumb {
+  width: 195rpx;
+   margin: 20rpx auto;
+   margin-bottom: 5rpx;
+}
+
+.recommendItemThumb image {
+  width: 195rpx;
+  height: 194rpx;
+ 
+}
+
+.recommendItemTitle {
+  height: 60rpx;
+  overflow: hidden;
+
+  font-size: 24rpx;
+  color: #484848;
+
+  padding: 0 12rpx;
+}
+
+.recommendItemPrice {
+  color: #E12616;
+  font-size: 24rpx;
+  text-align: center;
+  padding-top: 5rpx;
+}
+
+.recommendItemPrice text {
+  font-size: 32rpx;
+}
+
+
+
+.optsItem {
+  position: relative;
+}
+.kf {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80rpx;
+  opacity: 0;
+}
+.flex {
+  display: flex;
+}
+
+.flexAlignItem {
+  align-items: center;
+}
+
+.flexrow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.top3 {
+
+}
+
+.box {
+  padding: 24rpx;
+}
+
+.top3Title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  color: #FFF;
+}
+
+.top3Content {
+  display: flex;
+  justify-content: space-between;
+  padding-top:24rpx; 
+  flex-wrap: wrap;
+}
+
+
+.top3Item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 224rpx;
+  height: 345rpx;
+  background-color: #FFF;
+  border-radius: 10rpx;
+  padding-top: 2px;
+
+  margin-bottom: 20rpx;
+}
+
+.top6Item {
+  align-items:flex-start;
+}
+
+.top6Item:nth-child(-n+3){
+  margin-bottom: 35rpx;
+}
+
+.top3ItemImg image {
+  width: 195rpx;
+  height: 195rpx;
+
+  margin-top: 10rpx;
+}
+
+.top3ItemTitle {
+  height: 60rpx;
+  overflow: hidden;
+
+  font-size: 24rpx;
+  color: #484848;
+  padding: 10rpx;
+  padding-bottom: 0;
+}
+
+.top3ItemPrice {
+  font-size: 24rpx;
+  color: #E12616;
+  padding-top: 2px;
+}
+
+.top3ItemPrice text {
+  font-size: 32rpx;
+}

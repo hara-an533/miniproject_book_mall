@@ -1,0 +1,113 @@
+/* pages/order/order.wxss */
+.Container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.flex {
+  display: flex
+}
+.vcenter {
+  align-items: center
+}
+.sb {
+  justify-content: space-between
+}
+.first-box {
+  width: 750rpx;
+  height: 10rpx;
+  display: flex;
+}
+.first-box image{
+  width: 100%;
+  height: 100%;
+}
+.first-mian {
+  height: 180rpx;
+  padding: 10rpx 45rpx;
+}
+.motify {
+  margin-top: 20rpx;
+}
+.samll-address {
+  width: 20rpx;
+  height: 28rpx;
+}
+.margin-boxs {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.margin-boxs-s {
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.addressAB {
+  height: 62rpx;
+  font-size: 23rpx;
+  color: #666;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+.second-box {
+  padding: 0 30rpx;
+}
+.second-box-1 {
+
+  border-bottom: 1px solid #ccc
+
+}
+.second-box-1 image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+.goumaineirong {
+  margin-left: 10rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+.picture {
+  margin-top: 20rpx;
+  padding-left: 30rpx;
+}
+.picture image {
+  width: 100rpx;
+  height: 130rpx;
+}
+.picture-s {
+  margin-left: 10rpx;
+}
+.xiaoji {
+  padding: 20rpx 40rpx;
+}
+.text-s {
+  font-size: 26rpx;
+}
+.last {
+  margin-top: 30rpx;
+  margin-left: 200rpx;
+}
+.hou {
+  color: #666;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+
+.guang{
+  color: #e53e30;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+.xin {
+  width: 188rpx;
+  height: 76rpx;
+  background-color: #e53e30;
+  color: #fff;
+  font-size: 26rpx;
+  justify-content: center;
+  margin-left: 20rpx;
+}
